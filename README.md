@@ -5,7 +5,7 @@ This app has basically two pages: login and main. The backend of the app is deve
 In the login page the user will insert his Github nickname, which will create a new app user by getting his github basic data (Avatar, Bio, Username) using the public API.
 
 ## Main
-In the main page, a list of users already registered is shown with two buttons: "like" and "dislike". Both buttons turn off profiles from user´s view, leaving users without any interaction.
+In the main page, a list of users already registered is shown along with two buttons: "like" and "dislike". Both buttons turn off users profiles from current user´s view, leaving only users without any interaction.
 If two user do like one to each other, a match will show in the screen.
 
 ### Modules
