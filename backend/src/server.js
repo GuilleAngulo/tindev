@@ -4,6 +4,8 @@ const cors = require('cors');
 
 const routes = require('./routes');
 
+const { username, password, cluster, database } = require('../src/util/database');
+
 const app = express();
 const server = require('http').Server(app);
 const io = require('socket.io')(server);
@@ -16,23 +18,9 @@ io.on('connection', socket => {
 	const { user } = socket.handshake.query;
 	connectedUsers[user] = socket.id;
 	
-	/**TESTES*/
-	/*console.log('Nova conexao', socket.id);
-	
-	socket.on('hello', message => {
-		console.log(message);
-	});
-	
-	setTimeout(() => {
-		socket.emit('world', {
-			message: 'OmniStack'
-		}, 5000);
-	});*/
-	
-	
 });
 
-mongoose.connect('mongodb+srv://username:password@mongodbcluster-hsdtj.mongodb.net/omnistack8?retryWrites=true&w=majority', {
+mongoose.connect(`mongodb+srv://${username}:${password}@${cluster}-hsdtj.mongodb.net/${database}?retryWrites=true&w=majority`, {
     useNewUrlParser: true
 });
 
