@@ -32,7 +32,7 @@ io.on('connection', socket => {
 	
 });
 
-mongoose.connect('mongodb+srv://guillermo:angulio1314@mongodbcluster-hsdtj.mongodb.net/omnistack8?retryWrites=true&w=majority', {
+mongoose.connect('mongodb+srv://username:password@mongodbcluster-hsdtj.mongodb.net/omnistack8?retryWrites=true&w=majority', {
     useNewUrlParser: true
 });
 
