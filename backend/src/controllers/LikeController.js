@@ -11,17 +11,20 @@ module.exports = {
         const { user } = req.headers;
 
         const loggedDev = await Dev.findById(user);
-        const targetDev = await Dev.findById(devId);
+        let targetDev = null
 
-        if(!targetDev) {
-            return res.status(400).json({ error: 'Dev not exists' });
-        }
+		try {
+		  targetDev = await Dev.findById(devId);
+		} catch (error) {
+		  return res.status(400).json({ error: 'Dev not exists' });
+		}
 
         console.log(`User ${loggedDev.user} liked ${targetDev.user}.`);
 
         if(targetDev.likes.includes(loggedDev._id)) {
             const loggedSocket = req.connectedUsers[user];
             const targetSocket = req.connectedUsers[devId];
+			
             console.log(`It´s a MATCH between ${targetDev.user} and ${loggedDev.user} `);
             
             if(loggedSocket) {

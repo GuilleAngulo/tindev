@@ -11,7 +11,7 @@ import dislike from '../assets/dislike.png';
 import itsamatch from '../assets/itsamatch.png';
 
 export default function Main({ navigation }) {
-    const id = navigation.getParam('user')
+    const id = navigation.getParam('user');
     const [users, setUsers] = useState([]);
     const [matchDev, setMatchDev] = useState(null);
 
@@ -25,17 +25,18 @@ export default function Main({ navigation }) {
 
          setUsers(response.data);
         }
+
         loadUsers();
     }, [id]);
 
     useEffect(() => {
-        const socket = io('http://192.168.15.22:3333', {
+        const socket = io('http://localhost:3333', {
             query: { user: id }
         });
 
         socket.on('match', dev => {
             setMatchDev(dev);
-        });
+        })
     }, [id]);
 
     async function handleDislike() {
@@ -101,8 +102,8 @@ export default function Main({ navigation }) {
 
         { matchDev && (
             <View style={styles.matchContainer}>
-                <Image style={styles.matchImage} source={itsamatch}></Image>
-                <Image style={styles.matchAvatar} source={{ uri: matchDev.avatar }}></Image>
+                <Image style={styles.matchImage} source={itsamatch} />
+                <Image style={styles.matchAvatar} source={{ uri: matchDev.avatar }} />
 
                 <Text style={styles.matchName}>{matchDev.name}</Text>
                 <Text style={styles.matchBio}>{matchDev.bio}</Text>
@@ -248,5 +249,5 @@ const styles = StyleSheet.create({
         marginTop: 30,
         fontWeight: 'bold',
 
-    }
+    },
 });

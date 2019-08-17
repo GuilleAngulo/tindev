@@ -4,7 +4,12 @@ const cors = require('cors');
 
 const routes = require('./routes');
 
-const { username, password, cluster, database } = require('../src/util/database');
+//const { username, password, cluster, database } = require('../src/util/database');
+
+const username = "guillermo";
+const password = "angulio1314";
+const hostname = "mongodbcluster-hsdtj.mongodb.net";
+const database = "omnistack8";
 
 const app = express();
 const server = require('http').Server(app);
@@ -20,7 +25,7 @@ io.on('connection', socket => {
 	
 });
 
-mongoose.connect(`mongodb+srv://${username}:${password}@${cluster}-hsdtj.mongodb.net/${database}?retryWrites=true&w=majority`, {
+mongoose.connect(`mongodb+srv://${username}:${password}@${hostname}/${database}?retryWrites=true&w=majority`, {
     useNewUrlParser: true
 });
 

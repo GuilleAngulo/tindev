@@ -36,22 +36,8 @@ export default function Main({ match }) {
 
         socket.on('match', dev => {
             setMatchDev(dev);
-        });
-
-        
-        /** TESTES */
-       
-        /*socket.on('world', message => {
-            console.log(message);
-        });
-
-        setTimeout(() => {
-            socket.emit('hello', {
-                message: 'Hello World'
-            })
-        }, 3000);*/
-
-    }, [match.params.id]);
+         })
+		}, [match.params.id]);
 
     async function handleDislike(id) {
         await api.post(`/devs/${id}/dislikes`, null, {
