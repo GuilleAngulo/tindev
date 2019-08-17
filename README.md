@@ -34,5 +34,4 @@ This project is licensed under the MIT License.
 * This project is developed as a part of the Omnistack Week 8.0 by Rocketseat (https://github.com/Rocketseat) 
 
 ## Demo
-<img src="https://github.com/GuilleAngulo/tindev/blob/master/match.gif" width="400">
-![](https://https://github.com/GuilleAngulo/tindev/blob/master/match.gif | width=150)
+<img src="https://github.com/GuilleAngulo/tindev/blob/master/match.gif" width="800">
