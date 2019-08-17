@@ -1,6 +1,3 @@
-/** Las buenas practicas para los controllers es que solo se creen con 5 metodos:
-INDEX, SHOW, STORE, UPDATE y DELETE. Si es necesario algun metodo mas hay que
-crear un nuevo controller. Como en este caso para los likes. */
 const Dev = require('../models/Dev');
 
 module.exports = {

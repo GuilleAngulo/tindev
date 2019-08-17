@@ -4,12 +4,7 @@ const cors = require('cors');
 
 const routes = require('./routes');
 
-//const { username, password, cluster, database } = require('../src/util/database');
-
-const username = "guillermo";
-const password = "angulio1314";
-const hostname = "mongodbcluster-hsdtj.mongodb.net";
-const database = "omnistack8";
+const { username, password, hostname, database } = require('../src/util/database');
 
 const app = express();
 const server = require('http').Server(app);
