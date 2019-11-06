@@ -21,6 +21,26 @@ If two user do like one to each other, a match will show in the screen.
 * [React-Native](http://www.reactnative.com/) - Native mobile client app
 * [NodeJS](https://nodejs.org/en/) -  The server-side JavaScript runtime environment
 
+## How to run
+It´s necessary to have installed: [Node.js (LTS)](https://nodejs.org/en/), [NPM](https://www.npmjs.com/get-npm) or [Yarn](https://yarnpkg.com/lang/en/).
+
+### Backend
+``
+cd backend
+npm start
+``
+### Frontend
+``
+cd frontend
+npm start
+``
+### Mobile
+It´s necessary to install an android emulator, like [Genymotion](https://www.genymotion.com/). Run the device emulator and after that run the app.
+``
+cd mobile
+npm react-native run-android
+``
+
 ## License
 
 This project is licensed under the MIT License.
