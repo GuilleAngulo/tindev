@@ -21,10 +21,6 @@ If two user do like one to each other, a match will show in the screen.
 * [React-Native](http://www.reactnative.com/) - Native mobile client app
 * [NodeJS](https://nodejs.org/en/) -  The server-side JavaScript runtime environment
 
-## Authors
-
-* **Diego Fernandes ([@diego3g](https://github.com/diego3g))**
-
 ## License
 
 This project is licensed under the MIT License.
