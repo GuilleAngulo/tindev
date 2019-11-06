@@ -1,5 +1,5 @@
 # Tindev
-This app has basically two pages: login and main. The backend of the app is developed in NodeJS, and the frontend is coded in two versions: one in React for browser client and another in React-Native for mobile-native client. Course produced by @RockeatSeat and teached by @diego3g.
+This app has basically two pages: login and main. The backend of the app is developed in NodeJS, and the frontend is coded in two versions: one in React for browser client and another in React-Native for mobile-native client. Course produced by [@RockeatSeat](https://github.com/Rocketseat) and teached by [@diego3g](https://github.com/diego3g).
 
 ## Login
 In the login page the user will insert his Github nickname, which will create a new app user by getting his github basic data (Avatar, Bio, Username) using the public API.
@@ -23,7 +23,7 @@ If two user do like one to each other, a match will show in the screen.
 
 ## Authors
 
-* **Diego Fernandes (@diego3g)**
+* **Diego Fernandes ([@diego3g](https://github.com/diego3g))**
 
 ## License
 
@@ -31,7 +31,7 @@ This project is licensed under the MIT License.
 
 ## Acknowledgments
 
-* This project is developed as a part of the Omnistack Week 8.0 by Rocketseat (https://github.com/Rocketseat) 
+* This project is developed as a part of the Omnistack Week 8.0 by [Rocketseat](https://github.com/Rocketseat) 
 
 ## Demo
 <img src="https://github.com/GuilleAngulo/tindev/blob/master/match.gif" width="800">
