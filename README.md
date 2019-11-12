@@ -50,9 +50,9 @@ This project is licensed under the MIT License.
 * This project is developed as a part of the Omnistack Week 8.0 by [Rocketseat](https://github.com/Rocketseat) 
 
 ## Web Screens
-<img src="https://github.com/GuilleAngulo/tindev/blob/master/react-1.png" width="400"> <img src="https://github.com/GuilleAngulo/tindev/blob/master/react-2.png" width="400">
+<img src="https://github.com/GuilleAngulo/tindev/blob/master/react-1.png" width="430"> <img src="https://github.com/GuilleAngulo/tindev/blob/master/react-2.png" width="430">
 
-## Web Screens
+## Mobile Screens
 
 <img src="https://github.com/GuilleAngulo/tindev/blob/master/app-1.png" width="300"> <img src="https://github.com/GuilleAngulo/tindev/blob/master/mobile-2.png" width="300">
 
