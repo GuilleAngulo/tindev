@@ -1,4 +1,4 @@
-# Tindev
+# 👨🏻‍💻Tindev
 This app has basically two pages: login and main. The backend of the app is developed in NodeJS, and the frontend is coded in two versions: one in React for browser client and another in React-Native for mobile-native client. Course produced by [@RockeatSeat](https://github.com/Rocketseat) and teached by [@diego3g](https://github.com/diego3g).
 
 ## Login
@@ -40,10 +40,6 @@ It´s necessary to install an android emulator, like [Genymotion](https://www.ge
 cd mobile
 npm react-native run-android
 ``
-
-## License
-
-This project is licensed under the MIT License.
 
 ## Acknowledgments
 
